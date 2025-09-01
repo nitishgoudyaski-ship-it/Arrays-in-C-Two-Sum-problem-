@@ -1,0 +1,15 @@
+# Assignment Questions (Reflection)
+
+How long did you spend on this assignment?  
+I spent around 1.5 hours, including writing, testing, and reviewing my code.  
+
+Based on your effort, what letter grade would you say you earned?  
+I would give myself an A for effort, because I tried multiple approaches (brute force and optimized hash map solution) before finalizing.  
+
+Based on your solution, what letter grade would you say you earned?  
+I believe I earned an A, since the program compiles, runs, and produces the correct output for all test cases, including edge cases.  
+
+Provide a summary of what doesn't work in your solution, along with an explanation of how you attempted to solve the problem and where you feel you struggled.  
+Initially, I attempted a brute force approach using two nested loops, which had a time complexity of O(n²). It worked but was inefficient. 
+After that, I researched hash maps in C++ and rewrote my solution using an `unordered_map`, which reduced the complexity to O(n). 
+My final solution works correctly for all cases. The only part I struggled with was remembering the correct syntax for unordered_map in C++, but after reviewing documentation and examples, I solved it.  
