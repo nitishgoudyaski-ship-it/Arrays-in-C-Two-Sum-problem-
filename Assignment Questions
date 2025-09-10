@@ -1,15 +1,16 @@
-# Assignment Questions (Reflection)
+Assignment Questions
 
-How long did you spend on this assignment?  
-I spent around 1.5 hours, including writing, testing, and reviewing my code.  
+How long did you spend on this assignment?
+I have spent an 1.5 hours and includes in writing, testing, and editing my code in the GitHub.
 
-Based on your effort, what letter grade would you say you earned?  
-I would give myself an A for effort, because I tried multiple approaches (brute force and optimized hash map solution) before finalizing.  
+Based on your effort, what letter grade would you say you earned?
+I would give myself an A for effort, as I tried a number of solutions (brute force and optimized hash map solution) before settling.
 
-Based on your solution, what letter grade would you say you earned?  
-I believe I earned an A, since the program compiles, runs, and produces the correct output for all test cases, including edge cases.  
+What letter grade do you deserve on your solution?
+I deserve an A because the program compiles, runs, and produces the correct output for all test cases, including edge cases.
 
-Provide a summary of what doesn't work in your solution, along with an explanation of how you attempted to solve the problem and where you feel you struggled.  
-Initially, I attempted a brute force approach using two nested loops, which had a time complexity of O(n²). It worked but was inefficient. 
-After that, I researched hash maps in C++ and rewrote my solution using an `unordered_map`, which reduced the complexity to O(n). 
-My final solution works correctly for all cases. The only part I struggled with was remembering the correct syntax for unordered_map in C++, but after reviewing documentation and examples, I solved it.  
+Write a summary of what doesn't work in your solution, including a description of how you attempted to solve the problem and where you believe you had problems.
+Initially, I solved it using a brute force approach with two nested loops, which was O(n) in time complexity. It was working but not efficient. 
+Then I came to know about hash maps in C++ and used an `unordered_map` to solve my problem, reducing the complexity to O(n).
+My ultimate solution is right in all cases. 
+All I struggled with was the correct syntax of implementing unordered_map in C++, which I understood after reviewing documentation and examples.
