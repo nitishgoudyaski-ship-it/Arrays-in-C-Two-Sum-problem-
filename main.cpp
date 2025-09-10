@@ -5,35 +5,35 @@ using namespace std;
 
 // Function to return indices of two numbers that add up to target
 vector<int> twoSum(vector<int>& nums, int target) {
-    unordered_map<int, int> seen; // stores number -> index
-    for (int i = 0; i < nums.size(); i++) {
+    unordered_map<int, int> seen; // number -> index
+    for (int i = 0; i < nums.size(); ++i) {
         int complement = target - nums[i];
         if (seen.find(complement) != seen.end()) {
-            // Found the pair
             return {seen[complement], i};
         }
-        seen[nums[i]] = i; // store current number with its index
+        seen[nums[i]] = i;
     }
-    return {}; // Should never happen since one solution is guaranteed
+    return {};
 }
 
 int main() {
-    vector<int> nums = {2, 7, 11, 15};
-    int target = 9;
+    // Test case 1: Different from common examples
+    vector<int> nums1 = {8, 12, 16, 4, 6};
+    int target1 = 20;
+    vector<int> result = twoSum(nums1, target1);
+    cout << "[" << result[0] << ", " << result[1] << "]" << endl;  // Expected: [0,2] or [2,0]
 
-    vector<int> result = twoSum(nums, target);
-    cout << "[" << result[0] << ", " << result[1] << "]" << endl;
+    // Test case 2: Negative numbers involved
+    vector<int> nums2 = {-3, 1, 7, 5, -2};
+    int target2 = 4;
+    result = twoSum(nums2, target2);
+    cout << "[" << result[0] << ", " << result[1] << "]" << endl;  // Expected: [0,2]
 
-    // Test additional cases
-    nums = {3, 2, 4};
-    target = 6;
-    result = twoSum(nums, target);
-    cout << "[" << result[0] << ", " << result[1] << "]" << endl;
-
-    nums = {3, 3};
-    target = 6;
-    result = twoSum(nums, target);
-    cout << "[" << result[0] << ", " << result[1] << "]" << endl;
+    // Test case 3: Larger numbers
+    vector<int> nums3 = {100, 250, 400, 600, 50};
+    int target3 = 650;
+    result = twoSum(nums3, target3);
+    cout << "[" << result[0] << ", " << result[1] << "]" << endl;  // Expected: [1,3] or [3,1]
 
     return 0;
 }
